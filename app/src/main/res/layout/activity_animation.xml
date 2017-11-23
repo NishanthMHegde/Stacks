@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nishanth.stacks.Animation">
+
+    <ListView
+        android:id="@+id/lvanim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/pushBtn"
+        android:layout_alignStart="@+id/pushBtn" />
+
+    <EditText
+        android:id="@+id/userInput"
+        android:hint="Enter a number to push"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="70dp" />
+
+    <Button
+        android:id="@+id/pushBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Push"
+        android:layout_below="@+id/userInput"
+        android:layout_toStartOf="@+id/userInput"
+        android:layout_marginTop="18dp" />
+
+    <Button
+        android:id="@+id/popBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/pushBtn"
+        android:layout_marginEnd="26dp"
+        android:text="Pop" />
+</RelativeLayout>
